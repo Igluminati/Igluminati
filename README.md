@@ -10,13 +10,13 @@ You can click the Preview link to take a look at your changes.
 --->
 ~oi~
 
-* [Electronic Frontier Foundation]
+* [Electronic Frontier Foundation]: https://www.eff.org/
 *   formed: 1990
 *   HQ: Sam Francisco, USA
-* [The Mozilla Foundation]
+* [The Mozilla Foundation]: https://www.eff.org/
 *   formed: 2003
 *   HQ: Sam Francisco, USA
-* [Open Rights Group]
+* [Open Rights Group]: https://www.eff.org/
 *   formed: 2005
 *   HQ: London, England
 
