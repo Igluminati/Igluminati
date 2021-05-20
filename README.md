@@ -15,8 +15,7 @@ You can click the Preview link to take a look at your changes.
 | Safari  | 19.03%                          | 12.74%                      | 22.0%                   |
 | Edge    | 3.74%                           | 5.07%                       | 1.9%                    |
 | Firefox | 3.68%                           | 3.62%                       | 4.9%                    |
-| Samsung 
- Internet | 3.27%                           | 3.29%                       | 2.7%                    | 
+| Samsung Internet | 3.27%                  | 3.29%                       | 2.7%                    | 
 | Opera   | 2.13%                           | 1.51%                       | 1.1%                    |
 | IE      | 0.73%                           | 1.76%                       | 3.9%                    |
 | Others  | 3.23%                           | 5.58%                       | 14.5%                   |
