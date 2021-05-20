@@ -11,12 +11,12 @@ You can click the Preview link to take a look at your changes.
 ~oi~
 
 * [Electronic Frontier Foundation](https://www.eff.org/)
-*   formed: 1990
-*   HQ: Sam Francisco, USA
+  *   formed: 1990
+  *   HQ: Sam Francisco, USA
 * [The Mozilla Foundation](https://www.mozilla.org/en-GB/)
-*   formed: 2003
-*   HQ: Sam Francisco, USA
+  *   formed: 2003
+  *   HQ: Sam Francisco, USA
 * [Open Rights Group](https://www.openrightsgroup.org/)
-*   formed: 2005
-*   HQ: London, England
+  *   formed: 2005
+  *   HQ: London, England
 
