@@ -9,8 +9,5 @@ Igluminati/Igluminati is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 
-
-
-From a statement from Aaron Swartz's family and girlfriend:
-> He used his prodigious skills as a programmer and technologist not to enrich himself but to make the Internet and the world a fairer, better place.
+The Unix command for changing dircetory is <code>cd</code> (change directory), and you can find out where you are with <code>pwd</code> (print working directory). 
 
