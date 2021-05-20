@@ -9,5 +9,8 @@ Igluminati/Igluminati is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 
-The Unix command for changing dircetory is <code>cd</code> (change directory), and you can find out where you are with <code>pwd</code> (print working directory). 
-
+```python
+def greet(repetitions):
+    for i in range(0, repetitions):
+        print("Hello world")
+```
