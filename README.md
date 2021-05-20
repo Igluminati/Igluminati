@@ -20,3 +20,4 @@ You can click the Preview link to take a look at your changes.
   *   formed: 2005
   *   HQ: London, England
 
+![cat doing assignment](https://rhul-cs-projects.github.io/CS1998-foundation-assessment/assignment.gif)
