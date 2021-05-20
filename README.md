@@ -9,8 +9,4 @@ Igluminati/Igluminati is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 
-```python
-def greet(repetitions):
-    for i in range(0, repetitions):
-        print("Hello world")
-```
+| Browser | Browser Stat Counter March 2021 | Net Market Share March 2021 | Wikimedia November 2019 |
