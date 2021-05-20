@@ -10,13 +10,13 @@ You can click the Preview link to take a look at your changes.
 --->
 ~oi~
 
-- Electronic Frontier Foundation
-  formed: 1990
-  HQ: Sam Francisco, USA
-- The Mozilla Foundation
-  formed: 2003
-  HQ: Sam Francisco, USA
-- Open Rights Group
-  formed: 2005
-  HQ: London, England
+* Electronic Frontier Foundation
+ * formed: 1990
+ * HQ: Sam Francisco, USA
+* The Mozilla Foundation
+ * formed: 2003
+ * HQ: Sam Francisco, USA
+* Open Rights Group
+ * formed: 2005
+ * HQ: London, England
 
