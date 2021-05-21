@@ -38,10 +38,15 @@ This allowed me to discover that the diamonds were located in the following path
 ```
 
 ### Deleting all the bags that do not contain diamonds
-
+To do this task, I used a command to find all files which did **not** include the 'diamond' string 
+```
+grep -Rw ~/cs1998-mission/ -Z -L -e 'diamond' | xargs --null rm
+```
 ### Deleting the directories on the paths that do not lead to diamonds
 As all the directories on the paths that do not lead to diamonds are now empty, I used the command to delete all empty directories:
 ```
 find . -empty -type d -delete
 ```
 Where the ``-empty -type d`` option implies that the command only applies to **empty directories**, and ``-delete`` indicating that the ``find`` command should delete all **empty directories** 
+
+### My completion code: zjac300-395a291536
