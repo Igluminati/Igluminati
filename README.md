@@ -44,4 +44,4 @@ As all the directories on the paths that do not lead to diamonds are now empty, 
 ```
 find . -empty -type d -delete
 ```
-
+Where the ``-empty -type d`` option implies that the command only applies to **empty directories**, and ``-delete`` indicating that the ``find`` command should delete all **empty directories** 
