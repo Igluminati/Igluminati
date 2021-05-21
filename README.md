@@ -20,4 +20,12 @@ You can click the Preview link to take a look at your changes.
 | IE      | 0.73%                           | 1.76%                       | 3.9%                    |
 | Others  | 3.23%                           | 5.58%                       | 14.5%                   |
 
+# Igli's Unix Mission
+
+## Finding the diamonds
+
 ``grep -Rw ~/cs1998-mission/ -e 'diamond'``
+
+## Deleting all the bags that do not contain diamonds
+
+## Deleting the directories on the paths that do not lead to diamonds
