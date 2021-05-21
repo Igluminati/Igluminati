@@ -27,6 +27,13 @@ You can click the Preview link to take a look at your changes.
 To find the diamonds, I used the command ``grep -Rw ~/cs1998-mission/ -e 'diamond'``.
 Where the ``-R`` option tells **grep** to read all files under each directory recursively, and the ``-w`` option instructs it to only select lines containing matches. The ``-e`` option is used to specify the string to be searched, in this case 'diamond'.
 
+This allowed me to discover that the diamonds were located in the following paths:
+```
+/home/cim/ug/zjac300/cs1998-mission/south/west/north/bag:a pink diamond
+/home/cim/ug/zjac300/cs1998-mission/north/west/west/bag:a precious diamond
+/home/cim/ug/zjac300/cs1998-mission/west/west/east/bag:a blue diamond
+```
+
 ### Deleting all the bags that do not contain diamonds
 
 ### Deleting the directories on the paths that do not lead to diamonds
