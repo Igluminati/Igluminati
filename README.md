@@ -22,10 +22,10 @@ You can click the Preview link to take a look at your changes.
 
 # Igli's Unix Mission
 
-## Finding the diamonds
+### Finding the diamonds
 
 ``grep -Rw ~/cs1998-mission/ -e 'diamond'``
 
-## Deleting all the bags that do not contain diamonds
+### Deleting all the bags that do not contain diamonds
 
-## Deleting the directories on the paths that do not lead to diamonds
+### Deleting the directories on the paths that do not lead to diamonds
