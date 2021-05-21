@@ -49,4 +49,4 @@ find . -empty -type d -delete
 ```
 Where the ``-empty -type d`` option implies that the command only applies to **empty directories**, and ``-delete`` indicating that the ``find`` command should delete all **empty directories** 
 
-### My completion code: zjac300-395a291536
+### My completion code: ``zjac300-395a291536``
