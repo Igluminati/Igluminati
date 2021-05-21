@@ -28,7 +28,7 @@ To find the diamonds, I used the following command:
 ```
 grep -Rw ~/cs1998-mission/ -e 'diamond'
 ```
-Where the ``-R`` option tells **grep** to read all files under each directory recursively, and the ``-w`` option instructs it to only select lines containing matches. The ``-e`` option is used to specify the string to be searched, in this case 'diamond'.
+Where the ``-R`` option tells **grep** to read all files under each directory recursively, and the ``-w`` option instructs it to only select lines containing matches. The ``-e`` option is used to specify the string to be searched, in this case **'diamond'**.
 
 This allowed me to discover that the diamonds were located in the following paths:
 ```
@@ -42,6 +42,8 @@ To do this task, I used a command to find all files which did **not** include th
 ```
 grep -Rw ~/cs1998-mission/ -Z -L -e 'diamond' | xargs --null rm
 ```
+The ``-Z`` argument allows for the command to print with a null terminator rather than the usual newline seperator, whereas the ``-L`` argument allows grep to print the filenames of those files on its command line which **do not** match the regular expression **'diamond'**. Lastly, the ``--null`` argument tells xargs to accept null-terminated inputs which in turn allows the ``rm`` to remove said input (in this case the filenames of those files without the **'diamond'** string).
+
 ### Deleting the directories on the paths that do not lead to diamonds
 As all the directories on the paths that do not lead to diamonds are now empty, I used the command to delete all empty directories:
 ```
