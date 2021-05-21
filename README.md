@@ -24,7 +24,8 @@ You can click the Preview link to take a look at your changes.
 
 ### Finding the diamonds
 
-``grep -Rw ~/cs1998-mission/ -e 'diamond'``
+To find the diamonds, I used the command ``grep -Rw ~/cs1998-mission/ -e 'diamond'``.
+Where the ``-R`` option tells **grep** to read all files under each directory recursively, and the **-w** option instructs it to only select lines containing matches. The ``-e`` option is used to specify the string to be searched, in this case 'diamond'.
 
 ### Deleting all the bags that do not contain diamonds
 
