@@ -40,3 +40,8 @@ This allowed me to discover that the diamonds were located in the following path
 ### Deleting all the bags that do not contain diamonds
 
 ### Deleting the directories on the paths that do not lead to diamonds
+As all the directories on the paths that do not lead to diamonds are now empty, I used the command to delete all empty directories:
+```
+find . -empty -type d -delete
+```
+
