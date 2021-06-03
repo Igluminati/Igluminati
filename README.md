@@ -20,7 +20,7 @@ You can click the Preview link to take a look at your changes.
 | IE      | 0.73%                           | 1.76%                       | 3.9%                    |
 | Others  | 3.23%                           | 5.58%                       | 14.5%                   |
 
-# Igli's Unix Mission
+# Unix Mission
 
 ### Finding the diamonds
 
