@@ -24,35 +24,49 @@ strong headline accuracy can still be unusable for anyone writing in a second
 language. Four-person team; I built the preprocessing and tokenisation over an
 800k-sample corpus and the non-native hold-out set.
 
+**Visual odometry from a phone camera**
+· [full report (PDF)](https://iglikristo.xyz/vamr-miniproj.pdf)
+
+Monocular VO (FAST, KLT, PnP RANSAC) with 100% pose success across 13,000+
+frames. A single camera recovers its path but not its scale, and a fast
+rotation is enough to lose the track, so we filmed a Swiss cablecar on a
+Samsung S20 and used the phone's gyroscope to survive the rotations and its
+IMU to put the trajectory into metres: 4.2x scale recovery, matching
+barometric elevation to within 1.2%.
+
+**Knowledge-graph QA chatbot**
+· [report (PDF)](https://iglikristo.xyz/atai-bot-report.pdf)
+
+Answers questions from a Wikidata-derived knowledge graph. SPARQL first,
+embeddings when the graph has no hit, and only then a local LLM on Ollama, so
+that an answer points at a source instead of being generated freely.
+
+**Recursive leverage in yield-bearing stablecoins**
+· [overview](https://iglikristo.xyz)
+
+MSc project with Dawid Rymarczyk, supervised by Prof. Claudio Tessone and
+Krzysztof Gogol at UZH. Large wallets loop yield-bearing stablecoins on Aave
+v3 and Morpho Blue to stack extra yield. We ask whether they are really
+following a handful of shared strategies, how those strategies differ in risk
+management, and whether the on-chain state of a position can tell you a
+stressful day is coming. HDBSCAN/UMAP for the cohorts, XGBoost with SHAP
+attribution for the prediction, ROC-AUC 0.90 and 0.98. Code private until the
+write-up is submitted.
+
+**Multi-token DeFi staking pool on Base**
+· [overview](https://iglikristo.xyz)
+
+Most staking apps pay you by printing a new token. This one does not: you
+deposit WETH, USDC or EURC, the contract routes it into a Morpho MetaMorpho
+vault, and a daily Chainlink Automation harvest returns the yield in the same
+token you put in. Team project for the Seminar in Blockchain Programming at
+UZH, graded 5.5/6.
+
 **[Concepts2Metrics](https://github.com/Igluminati/Concepts2Metrics)**
 
 Built during a data science internship at Zappi in London: a Python pipeline
 using XGBoost and SHAP to identify which features of a product concept
 actually move outcome metrics.
-
-## Not yet public
-
-These are finished and I am happy to walk through the code or the write-up on
-request. They are private for now while the write-ups are still in progress.
-
-**Recursive leverage in yield-bearing stablecoins.** MSc project with the UZH
-Blockchain and Distributed Ledger group (Prof. Claudio Tessone, Krzysztof
-Gogol). A daily on-chain panel of 23 large leveraged "loopers" on Aave v3 and
-Morpho Blue: HDBSCAN/UMAP to separate behavioural cohorts, then XGBoost with
-SHAP attribution to explain which positions unwind under stress rather than
-only predicting that they will. ROC-AUC 0.90 and 0.98 on the two
-classification tasks.
-
-**Multi-token DeFi staking pool on Base.** Team project for the Seminar in
-Blockchain Programming at UZH, graded 5.5/6. A pool accepting WETH, USDC and
-EURC that forwards deposits into Morpho MetaMorpho vaults, with
-harvestable-yield accounting and a 24-hour Chainlink Automation job driving
-the harvest cycle. Solidity, Hardhat, Chainlink.
-
-**Visual odometry from a phone camera.** Monocular VO (FAST, KLT, PnP RANSAC)
-with 100% pose success across 13,000+ frames, then fused Samsung S20 IMU and
-gyro data from a Swiss cablecar recording to recover metric scale (4.2x) and
-match barometric elevation to within 1.2%.
 
 ## Stack
 
