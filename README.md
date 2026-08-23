@@ -14,6 +14,27 @@ Graduating July 2027.
 
 ## Selected work
 
+**Recursive leverage in yield-bearing stablecoins**
+· [overview](https://iglikristo.xyz)
+
+MSc project with Dawid Rymarczyk, supervised by Prof. Claudio Tessone and
+Krzysztof Gogol at UZH. Large wallets loop yield-bearing stablecoins on Aave
+v3 and Morpho Blue to stack extra yield. We ask whether they are really
+following a handful of shared strategies, how those strategies differ in risk
+management, and whether the on-chain state of a position can tell you a
+stressful day is coming. HDBSCAN/UMAP for the cohorts, XGBoost with SHAP
+attribution for the prediction, ROC-AUC 0.90 and 0.98. Code private until the
+write-up is submitted.
+
+**Multi-token DeFi staking pool on Base**
+· [overview](https://iglikristo.xyz)
+
+Most staking apps pay you by printing a new token. This one does not: you
+deposit WETH, USDC or EURC, the contract routes it into a Morpho MetaMorpho
+vault, and a daily Chainlink Automation harvest returns the yield in the same
+token you put in. Team project for the Seminar in Blockchain Programming at
+UZH, graded 5.5/6.
+
 **[ai-authorship-detection](https://github.com/Igluminati/ai-authorship-detection)**
 
 Detecting machine-generated academic essays with a multi-view ensemble
@@ -40,27 +61,6 @@ barometric elevation to within 1.2%.
 Answers questions from a Wikidata-derived knowledge graph. SPARQL first,
 embeddings when the graph has no hit, and only then a local LLM on Ollama, so
 that an answer points at a source instead of being generated freely.
-
-**Recursive leverage in yield-bearing stablecoins**
-· [overview](https://iglikristo.xyz)
-
-MSc project with Dawid Rymarczyk, supervised by Prof. Claudio Tessone and
-Krzysztof Gogol at UZH. Large wallets loop yield-bearing stablecoins on Aave
-v3 and Morpho Blue to stack extra yield. We ask whether they are really
-following a handful of shared strategies, how those strategies differ in risk
-management, and whether the on-chain state of a position can tell you a
-stressful day is coming. HDBSCAN/UMAP for the cohorts, XGBoost with SHAP
-attribution for the prediction, ROC-AUC 0.90 and 0.98. Code private until the
-write-up is submitted.
-
-**Multi-token DeFi staking pool on Base**
-· [overview](https://iglikristo.xyz)
-
-Most staking apps pay you by printing a new token. This one does not: you
-deposit WETH, USDC or EURC, the contract routes it into a Morpho MetaMorpho
-vault, and a daily Chainlink Automation harvest returns the yield in the same
-token you put in. Team project for the Seminar in Blockchain Programming at
-UZH, graded 5.5/6.
 
 **[Concepts2Metrics](https://github.com/Igluminati/Concepts2Metrics)**
 
