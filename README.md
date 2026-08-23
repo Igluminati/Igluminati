@@ -83,4 +83,5 @@ actually move outcome metrics.
 [LinkedIn](https://www.linkedin.com/in/igli-k-652b66189/) ·
 igli.kristo@uzh.ch
 
-*Languages: English (native), Albanian (fluent), German (A1.2, in progress).*
+*Languages: English (native), Albanian (fluent), German (A1.2, continuing each
+semester at the UZH Language Center; A2.2 expected by graduation).*
