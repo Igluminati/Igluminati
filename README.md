@@ -14,8 +14,8 @@ Graduating July 2027.
 
 ## Selected work
 
-**Recursive leverage in yield-bearing stablecoins**
-· [overview](https://iglikristo.xyz)
+**[Recursive leverage in yield-bearing stablecoins](https://github.com/Igluminati/recursive-leverage-defi)**
+· [full report (PDF)](https://github.com/Igluminati/recursive-leverage-defi/blob/main/paper/Recursive_Leverage_in_Yield_Bearing_Stablecoins__Proof_of_Concept_and_Empirical_Analysis.pdf)
 
 MSc project with Dawid Rymarczyk, supervised by Prof. Claudio Tessone and
 Krzysztof Gogol at UZH. Large wallets loop yield-bearing stablecoins on Aave
@@ -23,8 +23,7 @@ v3 and Morpho Blue to stack extra yield. We ask whether they are really
 following a handful of shared strategies, how those strategies differ in risk
 management, and whether the on-chain state of a position can tell you a
 stressful day is coming. HDBSCAN/UMAP for the cohorts, XGBoost with SHAP
-attribution for the prediction, ROC-AUC 0.90 and 0.98. Code private until the
-write-up is submitted.
+attribution for the prediction, ROC-AUC 0.90 and 0.98.
 
 **Multi-token DeFi staking pool on Base**
 · [overview](https://iglikristo.xyz)
