@@ -1,86 +1,91 @@
 # Igli Kristo
 
-MSc Informatics at the University of Zurich. Artificial Intelligence major,
-Data Science minor. Based in Luzern, Switzerland.
+MSc Informatics at the University of Zurich (AI major, Data Science minor).
+BSc Computer Science at Royal Holloway. Based in Luzern.
 
-I work on making model outputs checkable: whether an answer can be traced to a
-source, and whether a system fails evenly across the people it is used on.
-Before Zurich I did a BSc in Computer Science at Royal Holloway, University of
-London.
-
-**Currently looking for** a working-student or research-assistant role in
-Switzerland, 15 h/week during term and full-time in the lecture-free period.
+Most of the work is Python and Jupyter, plus Solidity when it's on-chain.
+Looking for a working-student or research-assistant role in Switzerland,
+15 h/week during term and full-time in the lecture-free period.
 Graduating July 2027.
 
-## Selected work
+Since June 2025 I've been writing Solidity at FVC Asset Group, remote from
+Luzern. Token, sale and vesting are on Ethereum mainnet, with a tested
+staking contract, Chainlink pricing, and a Gnosis Safe treasury:
+[FVCDigital/fvc](https://github.com/FVCDigital/fvc). This semester I'm a
+teaching assistant for Essentials in Text and Speech Processing at UZH.
 
-**[Recursive leverage in yield-bearing stablecoins](https://github.com/Igluminati/recursive-leverage-defi)**
-· [full report (PDF)](https://github.com/Igluminati/recursive-leverage-defi/blob/main/paper/Recursive_Leverage_in_Yield_Bearing_Stablecoins__Proof_of_Concept_and_Empirical_Analysis.pdf)
+## Projects
 
-MSc project with Dawid Rymarczyk, supervised by Prof. Claudio Tessone and
-Krzysztof Gogol at UZH. Large wallets loop yield-bearing stablecoins on Aave
-v3 and Morpho Blue to stack extra yield. We ask whether they are really
-following a handful of shared strategies, how those strategies differ in risk
-management, and whether the on-chain state of a position can tell you a
-stressful day is coming. HDBSCAN/UMAP for the cohorts, XGBoost with SHAP
-attribution for the prediction, ROC-AUC 0.90 and 0.98.
+### [Recursive leverage in yield-bearing stablecoins](https://github.com/Igluminati/recursive-leverage-defi)
 
-**Multi-token DeFi staking pool on Base**
-· [overview](https://iglikristo.xyz)
+[Report (PDF)](https://github.com/Igluminati/recursive-leverage-defi/blob/main/paper/Recursive_Leverage_in_Yield_Bearing_Stablecoins__Proof_of_Concept_and_Empirical_Analysis.pdf)
 
-Most staking apps pay you by printing a new token. This one does not: you
-deposit WETH, USDC or EURC, the contract routes it into a Morpho MetaMorpho
-vault, and a daily Chainlink Automation harvest returns the yield in the same
-token you put in. Team project for the Seminar in Blockchain Programming at
-UZH, graded 5.5/6.
+MSc project with Dawid Rymarczyk, supervised by Claudio Tessone and
+Krzysztof Gogol.
 
-**[ai-authorship-detection](https://github.com/Igluminati/ai-authorship-detection)**
+Large wallets on Aave v3 and Morpho Blue borrow against yield-bearing
+stablecoins and deposit the proceeds again, to stack the yield. We followed
+the 23 largest positions day by day. HDBSCAN found three behaviours: holding at
+low leverage, looping actively, and sitting at max leverage near liquidation.
+The first clustering mostly grouped days from the same wallet. I fixed that
+before we treated the groups as strategies.
 
-Detecting machine-generated academic essays with a multi-view ensemble
-(DeBERTa-v3, RoBERTa likelihood features, stylometry). The interesting result
-is not the F1 score. The evaluation asks whether false positives land
-disproportionately on non-native English writers, because a detector with
-strong headline accuracy can still be unusable for anyone writing in a second
-language. Four-person team; I built the preprocessing and tokenisation over an
-800k-sample corpus and the non-native hold-out set.
+XGBoost and SHAP for two labels: a stressed day, and a cut in risk. The
+stressed-day model came back at ROC-AUC 1.00, which was target leakage.
+Without it: 0.98 on stressed days, 0.90 on rebalancing. No liquidations in
+the sample. A 3-5% price fall would still raise liquidatable Aave collateral
+from about $40M to over $510M. I wrote the Aave pipeline and its tests.
 
-**Visual odometry from a phone camera**
-· [full report (PDF)](https://iglikristo.xyz/vamr-miniproj.pdf)
+### [Visual odometry from a phone camera](https://github.com/SubOptimal-Controllers/VizOdometryPipeline)
 
-Monocular VO (FAST, KLT, PnP RANSAC) with 100% pose success across 13,000+
-frames. A single camera recovers its path but not its scale, and a fast
-rotation is enough to lose the track, so we filmed a Swiss cablecar on a
-Samsung S20 and used the phone's gyroscope to survive the rotations and its
-IMU to put the trajectory into metres: 4.2x scale recovery, matching
-barometric elevation to within 1.2%.
+[Report (PDF)](https://iglikristo.xyz/vamr-miniproj.pdf)
 
-**Knowledge-graph QA chatbot**
-· [report (PDF)](https://iglikristo.xyz/atai-bot-report.pdf)
+VAMR mini-project. Monocular VO with FAST, KLT and PnP RANSAC. Pose
+estimation held across 13,000+ frames.
 
-Answers questions from a Wikidata-derived knowledge graph. SPARQL first,
-embeddings when the graph has no hit, and only then a local LLM on Ollama, so
-that an answer points at a source instead of being generated freely.
+A single camera recovers the path but not the scale, and a fast rotation
+loses the track. We filmed a Swiss cablecar on a Samsung S20, used the
+gyroscope through the rotations, and the IMU to put the trajectory in metres.
+Scale came out 4.2x. Elevation matched the barometer within 1.2%.
 
-**[Concepts2Metrics](https://github.com/Igluminati/Concepts2Metrics)**
+### [ai-authorship-detection](https://github.com/Igluminati/ai-authorship-detection)
 
-Built during a data science internship at Zappi in London: a Python pipeline
-using XGBoost and SHAP to identify which features of a product concept
-actually move outcome metrics.
+Four of us, for the same text-and-speech course. A detector for
+machine-written academic essays: DeBERTa-v3, RoBERTa likelihood features,
+stylometry. I did the preprocessing and tokenisation on an 800k-sample
+corpus, and built a hold-out of non-native English essays. We reported
+macro-F1 and the false-positive rate on that hold-out.
 
-## Stack
+### Staking pool on Base
 
-- **Languages:** Python · Java · TypeScript/JavaScript · Solidity · SQL · C++ · Bash · LaTeX
-- **ML:** PyTorch · scikit-learn · XGBoost · SHAP · HDBSCAN/UMAP · SpaCy · transformers · Ollama
-- **Data and web:** pandas · NumPy · Jupyter · Next.js · React · Prisma · tRPC · MySQL
-- **Vision:** OpenCV · visual odometry · camera and IMU sensor fusion
-- **Chain:** Hardhat · ethers.js · OpenZeppelin · Chainlink · Gnosis Safe
-- **Tools:** Git · Linux (Arch/Manjaro, Debian) · Docker · Vim
+Seminar in Blockchain Programming at UZH, graded 5.5/6.
+[Notes](https://iglikristo.xyz).
 
-## Elsewhere
+Deposit WETH, USDC or EURC. The contract sends it to a Morpho MetaMorpho
+vault. Once a day, Chainlink Automation harvests and pays the yield in the
+token that was deposited.
+
+### [Knowledge-graph QA chatbot](https://iglikristo.xyz/atai-bot-report.pdf)
+
+Questions over a Wikidata graph. SPARQL first, embeddings when the graph has
+no hit, then a local model on Ollama. It ran on Speakeasy, with the queries
+logged.
+
+### [Concepts2Metrics](https://github.com/Igluminati/Concepts2Metrics)
+
+Internship at Zappi in London, August to September 2023, with Kristupas
+Jucaitis. XGBoost and SHAP on product-concept tags. Train RMSE down 15%,
+test RMSE down 10%.
+
+## Tools
+
+Python, SQL, Java, TypeScript, Solidity, C++.
+PyTorch, scikit-learn, XGBoost, SHAP, HDBSCAN, transformers, SpaCy, OpenCV.
+Next.js, React, Prisma, tRPC, Hardhat, ethers.js, Chainlink, Gnosis Safe.
 
 [iglikristo.xyz](https://iglikristo.xyz) ·
 [LinkedIn](https://www.linkedin.com/in/igli-k-652b66189/) ·
-igli.kristo@uzh.ch
+[igli.kristo@uzh.ch](mailto:igli.kristo@uzh.ch) ·
+[IgliKristo@protonmail.com](mailto:IgliKristo@protonmail.com)
 
-*Languages: English (native), Albanian (fluent), German (A1.2, continuing each
-semester at the UZH Language Center; A2.2 expected by graduation).*
+English (native), Albanian (fluent), German (A1.2).
