@@ -3,7 +3,7 @@
 MSc Informatics at the University of Zurich (AI major, Data Science minor).
 BSc Computer Science at Royal Holloway. Based in Luzern.
 
-Since June 2025 I've been writing Solidity at FVC Asset Group, remote from Luzern.
+Since June 2025 I've been writing Solidity at FVC Asset Group, remote from Luzern ([FVCDigital/fvc](https://github.com/FVCDigital/fvc)).
 This semester I'm a teaching assistant for Essentials in Text and Speech Processing at UZH.
 
 ## Projects
