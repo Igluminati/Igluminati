@@ -4,10 +4,6 @@ MSc Informatics at the University of Zurich (AI major, Data Science minor).
 BSc Computer Science at Royal Holloway. Based in Luzern.
 
 Most of the work is Python and Jupyter, plus Solidity when it's on-chain.
-Looking for a working-student or research-assistant role in Switzerland,
-15 h/week during term and full-time in the lecture-free period.
-Graduating July 2027.
-
 Since June 2025 I've been writing Solidity at FVC Asset Group, remote from
 Luzern. Token, sale and vesting are on Ethereum mainnet, with a tested
 staking contract, Chainlink pricing, and a Gnosis Safe treasury:
