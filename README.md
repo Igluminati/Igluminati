@@ -3,12 +3,8 @@
 MSc Informatics at the University of Zurich (AI major, Data Science minor).
 BSc Computer Science at Royal Holloway. Based in Luzern.
 
-The analysis is in Python. The contracts are in Solidity, and they are
-live on Ethereum mainnet. Since June 2025 I have been writing them at FVC
-Asset Group, remote from Luzern: token, sale, and vesting, a tested staking
-contract, Chainlink pricing, and a Gnosis Safe treasury
-([FVCDigital/fvc](https://github.com/FVCDigital/fvc)). This semester I am a
-teaching assistant for Essentials in Text and Speech Processing at UZH.
+Since June 2025 I've been writing Solidity at FVC Asset Group, remote from Luzern.
+This semester I'm a teaching assistant for Essentials in Text and Speech Processing at UZH.
 
 ## Projects
 
